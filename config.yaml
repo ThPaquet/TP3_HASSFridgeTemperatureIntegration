@@ -1,0 +1,13 @@
+name: "Fridge Temperature"
+description: "Keep tabs and get warnings for your fridge temperature!"
+version: "1.0.0"
+slug: "fridge_temperature"
+arch: 
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: before
+ports:
+  8000/tcp: 8000
