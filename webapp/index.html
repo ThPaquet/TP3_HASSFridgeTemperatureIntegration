@@ -40,7 +40,7 @@
 
             client.on('connect', () => {
                 console.log('Connecté à ' + clientId);
-                client.subscribe('meteo/temperature', {qos:0})
+                client.subscribe('temperatures/+', {qos:0})
             });
 
             client.on('message', (topic, message, packet) => 

@@ -7,10 +7,10 @@ RUN \
         python3
 
 WORKDIR /data 
+
+COPY webapp/index.html /
 COPY run.sh /
 
-RUN mkdir webapp
-COPY webapp /
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
